@@ -16,33 +16,36 @@ export const NasaAPI = () => {// puedes acceder a imageUrl aquí
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <Photo
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <Photo
                     onImageChange={setImageUrl}
-                   
-                />
-                <img style={{  width: '500px', height: '500px', borderRadius: "15px" }} src={imageUrl}/>
-            </div>
-            }
-          </TrackVisibility>
-        </Col>
-        <Col size={12} md={6}>
-          <TrackVisibility>
-            {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>NASA's Image of the Day</h2>
-                <Text onExplanationChange={setExplanation} />
 
-                <p style={{ textAlign: 'justify' }}>{explanation}</p>
-                <Date onDateChange={setDate} />
-                <p style={{ textAlign: 'justify' }}>Date: {date}</p>
+                  />
+                  <img
+                    style={{ maxWidth: '100%', objectFit: 'cover', borderRadius: "15px" }}
+                    src={imageUrl}
+                  />
+                </div>
+              }
+            </TrackVisibility>
+          </Col>
+          <Col size={12} md={6}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>NASA's Image of the Day</h2>
+                  <Text onExplanationChange={setExplanation} />
+
+                  <p style={{ textAlign: 'justify' }}>{explanation}</p>
+                  <Date onDateChange={setDate} />
+                  <p style={{ textAlign: 'justify' }}>Date: {date}</p>
 
 
-              </div>}
-          </TrackVisibility>
-        </Col>
-      </Row>
-    </Container>
+                </div>}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
     </section >
   )
 }

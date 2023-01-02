@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import {  } from "./api2";
+import { MyComponent } from "./api2";
 
 
 export const GraficaAPI = () => {
@@ -14,7 +14,7 @@ export const GraficaAPI = () => {
             <TrackVisibility>
               {({ isVisible }) =>
             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                
+              
             </div>
             }
           </TrackVisibility>
