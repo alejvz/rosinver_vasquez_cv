@@ -61,7 +61,7 @@ export const Banner = () => {
                 </a>
                 
                 <h1>{`Hi! I'm Rosinver`} <span className="txt-rotate" data-period="1000" data-rotate='[  "Web Developer", "Data Scientist", "ML Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I'm student of electronic engineering and I'm passionate about machine learning and science in general. I'm also a big fan of technology, music, and video games. :)</p>
+                  <p style={{ color: "#fff" }}>I'm student of electronic engineering and I'm passionate about machine learning and science in general. I'm also a big fan of technology, music, and video games. :)</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
