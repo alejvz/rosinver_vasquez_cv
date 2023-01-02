@@ -35,8 +35,8 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              <p>
+              <h2 >Skills</h2>
+              <p style={{ textAlign: 'justify' }}>
                 I am a passionate person about the world of data science and machine learning,
                 with a solid foundation in statistics and mathematics. I have experience in
                 analyzing large datasets and implementing machine learning models to solve specific problems.
